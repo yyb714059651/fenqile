@@ -1,0 +1,393 @@
+/*头部店铺信息*/
+.fzy_header_top{
+    width: 100%;
+    height: 0.44rem;
+    background: #fff;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    background: #fff;
+}
+.fzy_header_top h2{
+    width: 72%;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 0.44rem;
+    text-align: center;
+    font-size: 0.18rem;
+    color: #394050;
+    text-indent: 0.3rem;
+}
+.fzy_header_top a{
+    display: inline-block;
+    width: 14%;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.44rem;
+    color: #ccc;
+    position: relative;
+}
+.cart_num{
+    width: 0.07rem;
+    height: 0.07rem;
+    border-radius: 100%;
+    background: red;
+    display: block;
+    position: absolute;
+    right: .12rem;
+    top: .1rem;
+}
+.fzy_header_top .fzy_go_back{
+    display: block;
+    content: ' ';
+    width: 14px;
+    height: 14px;
+    border-style: solid;
+    border-color: #a7afc2;
+    border-width: 1px 1px 0 0;
+    left: 15px;
+    top: 13px;
+    position: absolute;
+    border-color: #a7afc2;
+    border-width: 1px 1px 0 0;
+    -ms-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+
+/*轮播*/
+.lunbobanner{
+    width: 100%;
+    height: 3.75rem;
+    position: relative;
+    margin-top: 0.44rem;
+}
+.lunbobanner .keep{
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0.1rem;
+    background: url(../img/fzy/keep_gray--4ae1935bfd.png) no-repeat center;
+    background-size: cover;
+    z-index: 1;
+}
+.lunbobanner .swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.lunbobanner .swiper-container .swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.lunbobanner .swiper-container .swiper-wrapper .swipper-slide{
+    width: 100%;
+    height: 100%;
+}
+.lunbobanner .swiper-container img{
+    width: 100%;
+    height: 100%;
+}
+/*detail价格划线*/
+.detail_price{
+    width: 95%;
+    margin: 0 auto;
+    height: 0.3rem;
+    background: #fff;
+    padding: 0.2rem 0.1rem; 
+    
+}
+.detail_price p{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding-bottom:0.2rem; 
+}
+.detail_price strong{
+    color: #ed5f86;
+    font-size: 0.2rem;
+}
+.detail_price span{
+    text-decoration:line-through;
+    font-size: 0.1rem;
+    vertical-align: -webkit-baseline-middle;
+}
+
+
+.detail_infoinfo{
+    background: #fff;
+}
+.detail_goods_title{
+    padding: 0 0.1rem;
+    font-size: 0.18rem;
+    font-weight: 600;
+}
+.detail_goods_title i{
+    background:#ed5f86;
+    font-size: 0.1rem;
+    color: #fff;
+}
+.detail_goods-info{
+    padding: 0 0.1rem;
+    font-size: 0.12rem;
+    margin-top: 0.1rem;
+}
+.detail_goods-info i{
+    display: inline-block;
+    width: 0.07rem;
+    height: 0.07rem;
+    border-bottom: 1px solid #3b9bff;
+    border-right: 1px solid #3b9bff;
+    transform: rotate(-45deg);
+
+}
+.detail_goods-info span{
+    color: #3b9bff;
+}
+.select_goods{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0.1rem;
+    background: #fff;
+    margin-top: 0.1rem;
+}
+.select_goods p{
+    font-size: 0.14rem;
+}
+.select_goods p span{
+    font-size: 0.1rem;
+    color: #ccc;
+}
+.select_goods i{
+    display: inline-block;
+    width: 0.07rem;
+    height: 0.07rem;
+    border-bottom: 1px solid #3b9bff;
+    border-right: 1px solid #3b9bff;
+    transform: rotate(-45deg);
+}
+
+/*属性选择*/
+.shuxingxuanze{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: none;
+}
+.shuxingxuanze .shuxingxuanze_content{
+    position: absolute;
+    left: 0;
+    top: 1.8rem;
+    background: #fff;
+    z-index: 3;
+    width: 100%;
+    height: calc(100% - 1.8rem);
+    overflow: auto;
+}
+.shuxingxuanze_content dl{
+    font-size: 0.2rem;
+}
+.shuxingxuanze_content div{
+    font-size: 0.2rem;
+}
+.shuxingxuanze footer{
+    width: 100%;
+    height: 0.55rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 0.2rem;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+.shuxingxuanze footer p:nth-child(1){
+    margin-left: 0.1rem;
+    line-height: 0.55rem;
+}
+.shuxingxuanze footer p:nth-child(1) span{
+    color: #3b9bff;
+}
+.shuxingxuanze footer p:nth-child(2){
+    width: 1.3rem;
+    height: 0.55rem;
+    background: #3b9bff;
+    text-align: center;
+    line-height: 0.55rem;
+    color: #fff;
+}
+.zhanwei{
+    width: 100%;
+    height: 0.7rem;
+}
+.zzc_content_tu{
+    display: flex;
+    padding: 0.2rem 0.3rem;
+}
+.zzc_content_tu dd{
+    margin-left: 0.3rem;
+}
+.zzc_content_tu dd p span{
+    color: #3b9bff;
+}
+.zzc_content_tu dt img{
+    width: 0.8rem;
+    height: 0.8rem;
+}
+.shuxin{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+}
+.shuxin dd{
+    margin-top: 0.2rem;
+}
+.yanse dd span{
+    padding: 0.04rem 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.yanse dd .active{
+    background: #3b9bff;
+}
+.neicun dd span{
+    padding: 0.04rem 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.neicun dd .active{
+    background: #3b9bff;
+}
+.yunyinshang dd span{
+    padding: 0.04rem 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.yunyinshang dd .active{
+    background: #3b9bff;
+}
+.shunxing1 div{
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 0;
+}
+.shunxing1 p:nth-child(1) .iconfont{
+    font-size: 0.2rem;
+}
+.shunxing1 p:nth-child(2){
+    padding: 0.1rem 0.2rem;
+    border: 1px soild #ccc;
+}
+
+
+/*prop info*/
+.pro-info{
+    padding: 0.2rem 0.1rem;
+    background: #fff;
+    margin-top: 0.1rem;
+}
+.pro-info p{
+    padding: 0.15rem 0;
+    font-size: 0.14rem;
+    border-bottom:1px solid #ccc; 
+    position: relative;
+}
+.pro-info p span{
+    font-size: 0.1rem;
+    color: #ccc;
+}
+.sanjiao{
+    display: inline-block;
+    width: 0.07rem;
+    height: 0.07rem;
+    border-bottom: 1px solid #3b9bff;
+    border-right: 1px solid #3b9bff;
+    transform:rotate(-45deg) ;
+}
+.pro-info .color{
+    color: #666;
+}
+.xianhuo{
+    font-size: 0.1rem;
+    color: #ccc;
+}
+.baozheng i{
+    font-size: 0.1rem;
+    margin: 0 0.05rem;
+}
+.sanjiao{
+    display: inline-block;
+    width: 0.07rem;
+    height: 0.07rem;
+    border-bottom: 1px solid #3b9bff;
+    border-right: 1px solid #3b9bff;
+    transform:rotate(-45deg) ;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.2rem;
+}
+
+/* 评价开始 */
+.happingrange{
+    margin-top: 0.2rem;
+}
+.happingrange>p{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.1rem;
+    position: relative;
+    padding: 0 0.1rem;
+}
+.happingrange p .chakanpingjia{
+    margin-right: 0.5rem;
+}
+.sanjiao2{
+    position: absolute;
+    right: 0.1rem;
+    top: 0.0rem;
+}
+.happingrange ul{
+    margin-top: 0.3rem;
+}
+.happingrange ul li p{
+    padding: 0 0.1rem;
+    position: relative;
+    font-size: 0.01rem;
+}
+.happingrange ul li p .iconfont{
+    color: red;
+}
+.happingrange ul li div div{
+    display: flex;
+    padding: 0.2rem 0.1rem;
+}
+.happingrange ul li div div span{
+    display: inline-block;
+    width: 25%;
+    height: 1rem;
+    background: #ccc;
+    font-size: 0.2rem;
+}
+.happingrange ul li div div span:nth-child(1){
+    background:red;
+}
+.happingrange ul li div div span:nth-child(2){
+    background:greenyellow;
+}
+.happingrange ul li div div span:nth-child(3){
+    background:green;
+}
+.happingrange ul li div div span:nth-child(4){
+    background:blue;
+}

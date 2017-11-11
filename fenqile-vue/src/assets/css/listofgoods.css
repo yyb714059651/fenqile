@@ -1,0 +1,254 @@
+/*头部店铺标题*/
+.fzy_header_top{
+    width: 100%;
+    height: 0.44rem;
+    background: #fff;
+}
+.fzy_header_top h2{
+    width: 72%;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 0.44rem;
+    text-align: center;
+    font-size: 0.18rem;
+    color: #394050;
+}
+.fzy_header_top .fzy_go_back{
+    display: block;
+    content: ' ';
+    width: 14px;
+    height: 14px;
+    border-style: solid;
+    border-color: #a7afc2;
+    border-width: 1px 1px 0 0;
+    left: 15px;
+    top: 13px;
+    position: absolute;
+    border-color: #a7afc2;
+    border-width: 1px 1px 0 0;
+    -ms-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+/*店铺标题背景*/
+.fzy_pop_banner{
+    width: 100%;
+    height: 1.2rem;
+    background-size: cover;
+    position: relative;
+}
+.fzy_pop_banner_zzc{
+    width: 100%;
+    height: 100%;
+    background: url(../img/fzy/banner_mask--eb933544c5.png)no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.fzy_pop_banner img{
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_banner_tit{
+    width: 100%;
+    padding: 0 0.1rem;
+    height: 0.34rem;
+    display: flex;
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
+    box-sizing: border-box;
+}
+.pop_banner_tit_left{
+    display: flex;
+    width: 56%;
+    height: 100%;
+    position: relative;
+}
+.pop_banner_tit_right{
+    width: 40%;
+    display: flex
+}
+.pop_banner_tit_left strong{
+    width: 0.3rem;
+    height: 0.18rem;
+    position: absolute;
+    left: 0.4rem;
+    bottom: -0.15rem;
+    background: #ed5f86;
+    text-align: center;
+    line-height: 0.18rem;
+    font-size: 0.1rem;
+    color: #fff;
+    border-radius: 4px;
+}
+.pop_banner_tit_right .collect{
+    font-size: 0.1rem;
+    color: #fff;
+    height: 100%;
+}
+.pop_banner_tit_right .collect:nth-child(1){
+    width: 40%;
+    border-left:1px solid #fff;
+    text-align: center; 
+    font-size: 10px;
+}
+.pop_banner_tit_right .collect:nth-child(2){
+    width: 0.75rem;
+    text-align: center;
+    height: 80%;
+    line-height:0.3rem; 
+    border-radius: 4px;
+    background: #ffce35;
+}
+.dpbackground{
+    width: 0.34rem;
+    height: 0.34rem;
+    display: block;
+    background: url(../img/fzy/hBoGAFkQPfyATYkjAAANCtTdgMY556.jpg)no-repeat center;
+    background-size: cover;
+}
+.pop_banner_tit h3{
+    font-size: 0.16rem;
+    height: 0.34rem;
+    line-height: 0.34rem;
+    color: #fff;
+}
+
+/*导航*/
+.tab_nav{
+    width: 100%;
+    height: 0.45rem;
+    background: #fff;
+}
+.tab_nav ul{
+    width: 100%;
+    height: 0.45rem;
+    display: flex;
+}
+.tab_nav ul li{
+    width: 33.3%;
+    height: 100%;
+    text-align: center;
+    line-height: 0.45rem;
+    font-size: 0.14rem;
+}
+.tab_nav .active{
+    border-bottom: 2px solid #46a0ff;
+    
+}
+.tab_nav .active a{
+    color: #46a0ff;
+}
+
+/*goodslist_content*/
+.goods_list_content{
+    width: 100%;
+    background: #fff;
+    margin-top: 0.2rem;
+}
+.goods_list_content>p{
+    width: 90%;
+    margin: 0 auto;
+    height: 0.7rem;
+    text-align: center;
+    line-height: 0.7rem;
+    font-size: 0.2rem;
+    font-weight: 700;
+    border-bottom: 1px solid rgb(168, 167, 167);
+}
+.goods_list{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.goods_list li{
+    width: 50%;
+    float: left;
+}
+.goods_list li dl{
+    width: 100%;
+}
+.goods_list li dl dt img{
+    width:1.44rem;
+    height: 1.44rem;
+    display: block;
+    margin: 0 auto;
+}
+.goods_list li dl dd p{
+    width: 1.44rem;
+    font-size: 0.16rem;
+    margin: 0 auto;
+    color: #394050;
+    margin-bottom: 0.1rem;
+}
+.goods_list li dl dd .price_danjia{
+    font-size: 0.1rem;
+    color: #b7babf;
+}
+.goods_list li dl dd p:nth-child(3){
+    color: #579de7;
+}
+.goods_list li dl dd p:nth-child(3) strong{
+    background: #fe4979;
+    color: #fff;
+    font-size: 0.15rem;
+    padding: 0.03rem;
+    border-radius: 4px;
+}
+.goods_list li dl dd .fenqi_info{
+    font-size: 0.1rem;
+}
+.goods_list li dl dd .price_fenqi{
+    font-size: 0.1rem;
+}
+.get_more{
+    width: 100%;
+    height: 0.7rem;
+    text-align: center;
+    line-height: 0.7rem;
+    color:#579de7; 
+    font-size: 0.1rem;
+    border-bottom: none;
+}
+.get_more span{
+    width: 0.07rem;
+    height: 0.07rem;
+    display: inline-block;
+    border-bottom: 1px solid #579de7;
+    border-right: 1px solid #579de7;
+    transform: rotate(45deg) translateY(-0.07rem);
+}
+
+/*底部*/
+footer{
+    width: 100%;
+    height: 0.54rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+    background: #fff;
+}
+.footer{
+    width: 100%;
+    height: 100%;
+}
+ul.footer_box li{
+    width: 33.333333%;
+    float: left;
+    text-align: center;
+    line-height: 0.54rem;
+    font-size: 0.18rem;
+    border-right: 1px solid rgba(0,0,0,.2);
+    box-sizing: border-box;
+}
+ul.footer_box li:nth-child(3){
+    border: none;
+}

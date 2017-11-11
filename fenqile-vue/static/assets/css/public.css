@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* CSS Document */
+html{
+	font-size: 26.67vw;
+}
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, td {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family:microsoft yahei, "Helvetica Neue", "pingfang sc";
+  background: #f5f7f6;
+  color: #666;
+  user-select: none;
+  word-wrap: break-word; }
+
+a, u, s, del {
+  color: #666;
+  text-decoration: none; }
+
+fieldset, a img, .bor0 {
+  border: 0; }
+
+i, em, b {
+  font-style: normal;
+  font-weight: normal; }
+
+li {
+  list-style: none; }
+
+img {
+  vertical-align: middle; }
+
+table {
+  border-collapse: collapse; }
+
+/*细线边框*/
+.ind2 {
+  text-indent: 2em; }
+
+/*溢出隐藏出现省略号*/
+.over {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+/*让图片垂直对齐方式*/
+.valign {
+  text-align: center; }
+
+.valign:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle; }
+
+/*给valign添加个子元素对齐图片*/
+.valign img {
+  vertical-align: middle; }
+
+/*万能清除浮动法*/
+.clear {
+  zoom: 1; }
+
+.clear:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+/*子元素居中*/
+.ziyuansujuzhong {
+  justify-content: center;
+  align-items: center;
+  display: -webkit-flex; }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="tel" /><br />
+		<input type="text" id="pass" /><br />
+		<button id="logbtn">登录</button>
+		<button id="zhucebtn">注册</button>
+	</body>
+</html>
+<script src="js/ajaxTools.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function getId(id){
+		return document.getElementById(id);
+	}
+	getId("logbtn").onclick=function(){
+		my_ajax({
+			url:"PHP/log.php",
+			sendContent:"tel="+getId("tel").value+
+				"&pass="+getId("pass").value,
+	
+			method:"post",
+			func:function(str){
+				console.log(str);
+				/*if(str==1){
+					console.log("添加商品成功");
+				}else{
+					console.log("添加商品失败");
+				}*/
+			}
+		});
+	}
+	getId("zhucebtn").onclick=function(){
+		my_ajax({
+			url:"PHP/reg.php",
+			sendContent:"tel="+getId("tel").value+
+				"&pass="+getId("pass").value,
+	
+			method:"post",
+			func:function(str){
+				console.log(str);
+				/*if(str==1){
+					console.log("添加商品成功");
+				}else{
+					console.log("添加商品失败");
+				}*/
+			}
+		});
+	}
+	getId("tel").onblur=function(){
+		//console.log("sdljkjkldsjkl;ds")
+		my_ajax({
+			url:"PHP/regTel.php",
+			sendContent:"tel="+getId("tel").value,
+	
+			method:"get",
+			func:function(str){
+				console.log(str);
+				/*if(str==1){
+					console.log("添加商品成功");
+				}else{
+					console.log("添加商品失败");
+				}*/
+			}
+		});
+	}
+	
+</script>

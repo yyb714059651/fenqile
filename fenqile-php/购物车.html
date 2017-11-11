@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		会员名：<input type="text" id="vipname" /><br />
+		商品编号：<input type="text" id="goodsid" /><br />
+		数量：<input type="text" id="count"  /><br />
+		<button id="add">存入购物车</button>
+		<button id="get">取商品</button>
+	</body>
+</html>
+<script src="js/ajaxTools.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function getId(id){
+		return document.getElementById(id);
+	}
+	getId("add").onclick=function(){
+		my_ajax({
+			url:"PHP/addToShopCar.php",
+			sendContent:"vipName="+getId("vipname").value+
+				"&goodsId="+getId("goodsid").value+
+				"&count="+getId("count").value,
+	
+			method:"get",
+			func:function(str){
+				console.log(str);
+				/*if(str==1){
+					console.log("添加商品成功");
+				}else{
+					console.log("添加商品失败");
+				}*/
+			}
+		});
+	}
+	getId("get").onclick=function(){
+		my_ajax({
+			url:"PHP/getVipGoods.php",
+			sendContent:"vipName="+getId("vipname").value+
+				"&goodsId="+getId("goodsid").value+
+				"&count="+getId("count").value,
+	
+			method:"get",
+			func:function(str){
+				console.log(str);
+				/*if(str==1){
+					console.log("添加商品成功");
+				}else{
+					console.log("添加商品失败");
+				}*/
+			}
+		});
+	}
+</script>

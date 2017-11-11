@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		商品id：<input type="text" id="goodsId" /><br />
+		商 品 名：<input type="text" id="goodsName" /><br />
+		商品描述：<input type="text" id="descript" /><br />
+		商品原价：<input type="text" id="goodsYPrice" /><br />
+		商品现价：<input type="text" id="goodsXPrice" /><br />
+		仓库存量：<input type="text" id="kucun" /><br />
+		商品规格：<input type="text" id="goodsGuige" /><br />
+		商品规格1：<input type="text" id="goodsGuige1" /><br />
+		商品规格2：<input type="text" id="goodsGuige2" /><br />
+		商品图片：<input type="text" id="goodsImg" /><br />
+		商品图片1：<input type="text" id="goodsImg1" /><br />
+		商品图片2：<input type="text" id="goodsImg2" /><br />
+		颜色：<input type="text" id="color" /><br />
+		颜色1：<input type="text" id="color1" /><br />
+		颜色2：<input type="text" id="color2" /><br />
+		评价：<input type="text" id="pingjia" /><br />
+		所属商店：<input type="text" id="suoshushangdian" /><br />
+		活动：<input type="text" id="huodong" /><br />
+		<input type="button" value="录入商品" id="addGood" /><br />
+	</body>
+</html>
+<script src="js/ajaxTools.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function getId(id){
+		return document.getElementById(id);
+	}
+	//添加商品
+	getId("addGood").onclick=function(){
+		//console.log(getId("userName").value+","+getId("userPass").value);
+		if(true){
+			my_ajax({
+				url:"PHP/addGood.php",
+				sendContent:"goodsname="+getId("goodsName").value+
+					"&goodsid="+getId("goodsId").value+
+					"&kucun="+parseInt(getId("kucun").value)+
+					"&descript="+getId("descript").value+
+					"&oldprice="+parseFloat(getId("goodsYPrice").value)+
+					"&nowprice="+parseFloat(getId("goodsXPrice").value)+
+					"&guige="+getId("goodsGuige").value+
+					"&guige1="+getId("goodsGuige1").value+
+					"&guige2="+getId("goodsGuige2").value+
+					"&img="+getId("goodsImg").value+
+					"&img1="+getId("goodsImg1").value+
+					"&img2="+getId("goodsImg2").value+
+					"&color="+getId("color").value+
+					"&color1="+getId("color1").value+
+					"&color2="+getId("color2").value+
+					"&pinjia="+getId("pingjia").value+
+					"&ownstore="+getId("suoshushangdian").value+
+					"&huodong="+getId("huodong").value,
+				method:"get",
+				func:function(str){
+					console.log(str);
+					if(str==1){
+						console.log("添加商品成功");
+					}else{
+						console.log("添加商品失败");
+					}
+				}
+			});
+		}else{
+			alert("商品编号已被注册,请更换商品编号");
+			goodsId.style.color="red";
+		}
+	}
+</script>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script src="js/ajaxTools.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function getId(id){
+		return document.getElementById(id);
+	}
+	my_ajax({
+		url:"PHP/getGoods.php",
+//		sendContent:"goodsname="+getId("goodsName").value,
+
+		method:"get",
+		func:function(str){
+			
+			console.log(eval(str));
+		}
+	});
+	
+	my_ajax({
+		url:"PHP/getTheGoods.php",
+		sendContent:"keyWord=Apple",
+
+		method:"get",
+		func:function(str){
+			//console.log(str)
+			console.log(JSON.parse(str));
+		}
+	});
+	
+	my_ajax({
+		url:"PHP/getOrderedGoods.php",
+		sendContent:"order=1",
+
+		method:"get",
+		func:function(str){
+			//console.log(str)
+			console.log(JSON.parse(str));
+		}
+	});
+	
+	my_ajax({
+		url:"PHP/getTheGood.php",
+		sendContent:"id=1",
+
+		method:"get",
+		func:function(str){
+			//console.log(str)
+			console.log(JSON.parse(str));
+		}
+	});
+	
+</script>

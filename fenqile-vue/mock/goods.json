@@ -1,0 +1,61 @@
+{
+    "status":"0",
+    "msg":"111",
+	"fenlei":["iphone","ipad","Mac","Watch","iPod","配件"],
+    "product":[
+        {
+            "productId":"10001",
+            "productName":"iphone7",
+            "productdescribe":"Apple iPhone 8  4G智能手机",
+            "productPrice":9999,
+            "productImg":"https://cimgs1.fenqile.com/product/M00/CE/0B/hRoGAFm4OluAXrYCAAF1B1RQjDY516_300x300.png",
+            "producttitle":"iphoe",
+            "productfqPrice":201            
+        },
+        {
+            "productId":"10001",
+            "productName":"iphone7",
+            "productdescribe":"APPKE IPHONE 8G智能手机",
+            "productPrice":6666,
+            "productImg":"https://cimgs1.fenqile.com/product/M00/CE/0B/hRoGAFm4O7iAJSzSAAFqbinEdDg733_300x300.png",
+            "producttitle":"iphoe",
+            "productfqPrice":198            
+        },
+        {
+            "productId":"10001",
+            "productName":"iphone7",
+            "productdescribe":"iPhone 6  苹果Apple 4G手机",
+            "productPrice":5555,
+            "productImg":"https://cimgs1.fenqile.com/product2/M00/1E/87/omgGAFfQf0SAZR_wAAA8y7JSp5k263_300x300.jpg",
+            "producttitle":"iphoe",
+            "productfqPrice":189
+        },
+        {
+            "productId":"10001",
+            "productName":"iphone7",
+            "productdescribe":"APPKE IPHONE 8国行正品手机",
+            "productPrice":4444,
+            "productImg":"https://cimgs1.fenqile.com/product/M00/42/34/hRoGAFiuReuAFAN2AAB1GI8OKiw088_300x300.jpg",
+            "producttitle":"iphoe",
+            "productfqPrice":178            
+        },
+        {
+            "productId":"10001",
+            "productName":"iphone7",
+            "productdescribe":"iPhone 6  苹果Apple 4G手机",
+            "productPrice":5555,
+            "productImg":"https://cimgs1.fenqile.com/product2/M00/1E/87/omgGAFfQf0SAZR_wAAA8y7JSp5k263_300x300.jpg",
+            "producttitle":"iphoe",
+            "productfqPrice":189
+        },
+        {
+            "productId":"10001",
+            "productName":"iphone7",
+            "productdescribe":"APPKE IPHONE 8国行正品",
+            "productPrice":4444,
+            "productImg":"https://cimgs1.fenqile.com/product/M00/42/34/hRoGAFiuReuAFAN2AAB1GI8OKiw088_300x300.jpg",
+            "producttitle":"iphoe",
+            "productfqPrice":178            
+        }
+    ]
+}

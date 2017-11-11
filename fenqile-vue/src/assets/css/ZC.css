@@ -1,0 +1,135 @@
+body{
+	background: white;
+}
+/*head*/
+.Zchead{
+	top:0;
+	left:0;
+	background: #3B9BFF;
+	height:0.4rem;
+	display: flex;
+	position: relative;
+}
+.Zchead a{
+	position: absolute;
+	color: white;
+	display: block;
+	width:0.4rem;
+	font-size: 0.3rem;
+	line-height:0.4rem;
+}
+.Zchead span{
+	color: white;
+	display: block;
+	flex: 1;
+	line-height:0.4rem;
+	text-align: center;
+	font-size: 0.15rem;
+}
+.register-head{
+	background:#3b9bff;
+	height:1.98rem;
+}
+.head-img{
+	margin: 0 auto;
+	height:0.7rem;
+	width: 1.3rem;
+	vertical-align: middle;
+	padding-top:0.19rem;
+}
+.head-img img{
+	width:100%;
+	height:auto;
+}
+/*body*/
+.register-list{
+	background: white;
+	padding: 0.15rem 0;
+	position: relative;
+}
+.message-phone{
+	display: flex;
+	height:0.55rem;
+	border-bottom: 1px solid #eee;
+}
+.message-phone img{
+	display: block;
+	height:0.25rem;
+	width: 0.25rem;
+	padding:0.15rem 0.18rem;
+}
+.message-phone input{
+	display: block;
+	flex: 1;
+	color:#535c68;
+	font-size: 0.15rem;
+	outline: none;
+	border: solid 0px;
+}
+ input::-webkit-input-placeholder{
+ 	color: #ccc;
+ }
+ .message-phone .code{
+	width: 0.7rem;
+	height: 0.3rem;
+	text-align: center;
+	line-height: 0.28rem;
+	background:url(../img/yybimg/微信截图_20171024145727.png) no-repeat;
+	margin: 0.15rem 0.15rem;
+	color: red;
+	font-size: 0.15rem;
+	letter-spacing: 0.05rem;
+	overflow: hidden;
+}
+.message-phone .yzmnum{
+	outline: none;
+	border: solid 0px;
+	background: white;
+	color: #3B9BFF;
+}
+.register-foot{
+	padding:0.2rem;
+}
+.foot-button{
+	display: block;
+	height:0.53rem;
+	background:#3b9bff;
+	font-size:0.16rem;
+	color: white;
+	width:100%;
+	border: solid 0px;
+	outline: none;
+	border-radius: 0.1rem;
+}
+/*提示框*/
+#hick{
+  position: fixed;
+  width:80%;
+  margin: 0 auto;
+  top:51%;
+  left:10%;
+  height:0.4rem;
+  border-radius:0.1rem;
+  line-height: 0.4rem;
+  font-size:0.2rem;
+  text-align:center;
+  background:rgba(0,0,0,0);
+  color:white;
+}
+
+
+/*foot*/
+.zcfoot{
+	position:fixed;
+	width: 100%;
+	bottom:0.2rem;
+	padding: 0 0.1rem;
+	display: flex;
+}
+.zcfoot i{
+	display: block;
+	font-size: 0.15rem;
+	text-align: center;
+	flex: 1;
+}
+
